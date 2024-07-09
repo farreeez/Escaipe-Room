@@ -22,8 +22,8 @@ experience.
 To run the software successfully, ensure that the following software have been
 installed:
 
-- Java Runtime Environment (JRE) 11
-- JavaFX 11
+- Java Runtime Environment (JRE) 21
+- JavaFX 20
 
 ## Running
 
