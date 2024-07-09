@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.plant.PlantOpenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="720.0" stroke="BLACK" strokeType="INSIDE" width="960.0" />
+      <Label fx:id="chatTextArea1" alignment="CENTER" layoutX="190.0" layoutY="47.0" prefHeight="128.0" prefWidth="636.0" text="BRAIN WORM" textFill="RED">
+         <font>
+            <Font name="System Bold" size="88.0" />
+         </font>
+      </Label>
+      <Text fx:id="chatTextArea" fill="RED" layoutX="159.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oh no! there appears to be a worm in the brain that is actively eating and killing the brain you must force feed it 5 tumors to kill it by exploding it's stomache good luck!" wrappingWidth="698.13671875">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0011" height="76.0" layoutX="386.0" layoutY="588.0" stroke="BLACK" strokeType="INSIDE" width="242.0" />
+      <Label alignment="CENTER" layoutX="428.0" layoutY="585.0" prefHeight="49.0" prefWidth="160.0" text="PLAY">
+         <font>
+            <Font name="System Bold Italic" size="56.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="btnPlay" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="83.0" layoutX="385.0" layoutY="585.0" onMouseClicked="#play" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="242.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="19.0" layoutX="628.0" layoutY="641.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Label alignment="CENTER" layoutX="628.0" layoutY="634.0" prefHeight="30.0" prefWidth="85.0" text="Text to Speech">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="629.0" layoutY="641.0" onMouseClicked="#textToSpeech" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Text fx:id="timerText" fill="WHITE" layoutX="39.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="19.0" layoutX="628.0" layoutY="618.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Label alignment="CENTER" layoutX="628.0" layoutY="611.0" prefHeight="30.0" prefWidth="85.0" text="Stop TTS">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="629.0" layoutY="618.0" onMouseClicked="#stoptts" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+   </children>
+</Pane>

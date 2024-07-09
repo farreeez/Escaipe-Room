@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.ChatController">
+  <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="720.0" stroke="BLACK" strokeType="INSIDE" width="960.0" />
+    <TextField fx:id="inputText" layoutX="35.0" layoutY="409.0" onAction="#onSendMessage" prefHeight="26.0" prefWidth="435.0" />
+    <Button fx:id="sendButton" layoutX="484.0" layoutY="410.0" mnemonicParsing="false" onAction="#onSendMessage" style="-fx-background-color: #00FF00;" text="Send" />
+    <Button layoutX="537.0" layoutY="410.0" mnemonicParsing="false" onAction="#onGoBack" style="-fx-background-color: #FF0000;" text="Go Back" />
+      <Canvas fx:id="game" height="263.0" layoutX="35.0" layoutY="442.0" width="897.0" />
+      <ImageView fx:id="nasser" fitHeight="32.0" fitWidth="32.0" layoutX="603.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="typing" layoutX="635.0" layoutY="406.0" prefHeight="32.0" prefWidth="284.0" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lost" alignment="CENTER" layoutX="175.0" layoutY="528.0" prefHeight="92.0" prefWidth="662.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="63.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="aiTextArea" editable="false" layoutX="36.0" layoutY="26.0" prefHeight="377.0" prefWidth="897.0" wrapText="true" />
+    <TextArea fx:id="riddleTextArea" editable="false" layoutX="35.0" layoutY="26.0" prefHeight="377.0" prefWidth="897.0" wrapText="true" />
+      <Text fx:id="timerText" fill="WHITE" layoutX="831.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="114.13671875">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="hintCounter" fill="WHITE" layoutX="839.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="98.13671875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+  </children>
+</AnchorPane>

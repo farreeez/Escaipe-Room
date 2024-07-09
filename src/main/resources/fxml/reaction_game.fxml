@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" style="-fx-background-color: #CDC8C8;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.ReactionGameController">
+   <children>
+      <AnchorPane fx:id="jumpStartPane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0">
+         <children>
+            <Label fx:id="jumpStartLabel" layoutX="29.0" layoutY="145.0" opacity="0.0" prefHeight="390.0" prefWidth="911.0" text="JUMP START!" textFill="#f80000">
+               <font>
+                  <Font size="150.0" />
+               </font>
+            </Label>
+            <Button fx:id="returnButton" layoutX="633.0" layoutY="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#returnToGame" opacity="0.0" prefHeight="101.0" prefWidth="315.0" style="-fx-background-color: #21FF06;" text="Return" textAlignment="CENTER">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </Button>
+            <Label fx:id="passedText" layoutX="37.0" layoutY="640.0" prefHeight="44.0" prefWidth="336.0" text="You have passed the test!" textFill="#73ff00">
+               <font>
+                  <Font name="BM JUA OTF" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="ttsButton" layoutX="783.0" layoutY="650.0" mnemonicParsing="false" onMouseClicked="#textToSpeech" style="-fx-background-color: #73ff00;" text="Text To Speech" />
+            <Button fx:id="stTts" layoutX="783.0" layoutY="615.0" mnemonicParsing="false" onMouseClicked="#stoptts" style="-fx-background-color: #73ff00;" text="Stop TTS" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="title" layoutX="263.0" layoutY="13.0" prefHeight="147.0" prefWidth="432.0" text="Reaction Time Test" textAlignment="CENTER">
+         <font>
+            <Font name="BM JUA OTF" size="49.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="greenLight" fitHeight="392.0" fitWidth="604.0" layoutX="170.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/greenLights.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="onelight" fitHeight="392.0" fitWidth="604.0" layoutX="170.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Screenshot%202023-09-12%20at%203.39.56%20PM.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twolight" fitHeight="392.0" fitWidth="604.0" layoutX="170.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Screenshot%202023-09-12%20at%203.41.01%20PM.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="threelight" fitHeight="392.0" fitWidth="604.0" layoutX="170.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Screenshot%202023-09-12%20at%203.41.17%20PM.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fourlight" fitHeight="392.0" fitWidth="604.0" layoutX="170.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Screenshot%202023-09-12%20at%203.41.29%20PM.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fivelight" fitHeight="392.0" fitWidth="604.0" layoutX="170.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Screenshot%202023-09-12%20at%203.41.44%20PM.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="black" fitHeight="392.0" fitWidth="604.0" layoutX="170.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Screenshot%202023-09-12%20at%203.39.15%20PM.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="584.0" layoutX="-59.0" layoutY="-11.0" onMouseClicked="#clickLights" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="1072.0" />
+      <Label fx:id="gameTime" layoutX="154.0" layoutY="497.0" prefHeight="146.0" prefWidth="661.0">
+         <font>
+            <Font name="BM JUA OTF" size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="instructions" layoutX="46.0" layoutY="113.0" prefHeight="49.0" prefWidth="886.0" text="Click the lights to start. Click again when the lights turn GREEN. Get under 0.5 Seconds to continue">
+         <font>
+            <Font name="BM JUA OTF" size="20.0" />
+         </font>
+      </Label>
+      <Text fx:id="timerText" layoutX="39.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

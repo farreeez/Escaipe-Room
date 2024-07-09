@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!-- The root element of the FXML file is an AnchorPane -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.StoryController">
+   <children>
+      <!-- ImageView to display a background image -->
+      <ImageView fitHeight="730.0" fitWidth="976.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <!-- Load the background image from a URL -->
+            <Image url="@../images/sceneBackround.jpg" />
+         </image>
+      </ImageView>
+      <!-- ImageView to display an image of a character -->
+      <ImageView fitHeight="654.0" fitWidth="522.0" layoutX="-65.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" rotate="179.0">
+         <image>
+            <!-- Load the character image from a URL -->
+            <Image url="@../images/nasserCutout.png" />
+         </image>
+         <!-- Rotate the character image by 179 degrees -->
+         <rotationAxis>
+            <Point3D y="180.0" z="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <!-- ImageView to display a text bubble image -->
+      <ImageView fitHeight="495.0" fitWidth="700.0" layoutX="272.0" layoutY="20.0" pickOnBounds="true">
+         <image>
+            <!-- Load the text bubble image from a URL -->
+            <Image url="@../images/textBubble.png" />
+         </image>
+      </ImageView>
+      <!-- Button to continue to the game -->
+      <Button fx:id="startButton" layoutX="680.0" layoutY="611.0" mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="102.0" prefWidth="275.0" style="-fx-background-color: #00FF00;" text="Continue to the game">
+         <font>
+            <!-- Set the font size for the button's text -->
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <!-- TextArea to display introductory text -->
+      <TextArea editable="false" layoutX="327.0" layoutY="47.0" prefHeight="321.0" prefWidth="574.0" style="-fx-background-color: #FFFFFF;" text="&quot;Step into the Abandoned Brain Lab Escape Room, a forgotten chamber of intellectual intrigue. In this eerie laboratory, your challenge awaits: conquer three mind-testing activities to secure your escape. As you delve into the puzzles, remember that I Nasser Giacaman am always watching and ready to help. Your adventure into the depths of the human mind begins now.&quot;" wrapText="true">
+         <font>
+            <!-- Set the font name and size for the text -->
+            <Font name="BM DoHyeon OTF" size="21.0" />
+         </font>
+      </TextArea>
+      <Text fx:id="timerText" fill="WHITE" layoutX="27.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="129.13671875">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

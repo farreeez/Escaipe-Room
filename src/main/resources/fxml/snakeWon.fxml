@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.plant.SnakeWonController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="720.0" stroke="BLACK" strokeType="INSIDE" width="960.0" />
+      <Label fx:id="labelArea" alignment="CENTER" layoutX="-16.0" layoutY="86.0" prefHeight="274.0" prefWidth="1019.0" text="YOU WON!" textFill="LIME">
+         <font>
+            <Font name="System Bold" size="130.0" />
+         </font>
+      </Label>
+      <Text fx:id="txtArea" fill="LIME" layoutX="80.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations! You have managed to kill the worm!" wrappingWidth="1042.0">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="90.0" layoutX="194.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="90.0" layoutX="494.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Label alignment="CENTER" layoutX="193.0" layoutY="566.0" prefHeight="90.0" prefWidth="300.0" text="PLAY AGAIN">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="494.0" layoutY="565.0" prefHeight="90.0" prefWidth="300.0" text="RETURN">
+         <font>
+            <Font name="System Bold Italic" size="52.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="btnPlayAgain" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="90.0" layoutX="194.0" layoutY="572.0" onMouseClicked="#playAgain" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Rectangle fx:id="btnReturn" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="90.0" layoutX="494.0" layoutY="566.0" onMouseClicked="#returnRoom" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="19.0" layoutX="794.0" layoutY="632.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Label alignment="CENTER" layoutX="794.0" layoutY="625.0" prefHeight="30.0" prefWidth="85.0" text="Text to Speech">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="795.0" layoutY="632.0" onMouseClicked="#convertTextToSpeech" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Text fx:id="timer" fill="WHITE" layoutX="39.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="19.0" layoutX="794.0" layoutY="609.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Label alignment="CENTER" layoutX="794.0" layoutY="602.0" prefHeight="30.0" prefWidth="85.0" text="Stop TTS">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="19.0" layoutX="795.0" layoutY="609.0" onMouseClicked="#stoptts" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+   </children>
+</Pane>
